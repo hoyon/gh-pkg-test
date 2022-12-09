@@ -159,6 +159,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@hoyon/gh-pkg-test@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@hoyon/gh-pkg-test@workspace:."
+  dependencies:
+    esbuild: ^0.16.3
+    is-even: ^1.0.0
+  languageName: unknown
+  linkType: soft
+
 "esbuild@npm:^0.16.3":
   version: 0.16.3
   resolution: "esbuild@npm:0.16.3"
@@ -235,15 +244,6 @@ __metadata:
   checksum: c2986b0433c6048b917c185067ea42427413ef4136c45012e180e48fc24e6f01af9c94ca7e9bc6dd29ac529af45d26c9d4eb5b8639c9a79f68f337d24aeda2af
   languageName: node
   linkType: hard
-
-"gh-pkg-test@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "gh-pkg-test@workspace:."
-  dependencies:
-    esbuild: ^0.16.3
-    is-even: ^1.0.0
-  languageName: unknown
-  linkType: soft
 
 "is-buffer@npm:^1.1.5":
   version: 1.1.6

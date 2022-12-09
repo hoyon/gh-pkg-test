@@ -12,14 +12,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     ],\
     "dependencyTreeRoots": [\
       {\
-        "name": "gh-pkg-test",\
+        "name": "@hoyon/gh-pkg-test",\
         "reference": "workspace:."\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
-      ["gh-pkg-test", ["workspace:."]]\
+      ["@hoyon/gh-pkg-test", ["workspace:."]]\
     ],\
     "fallbackPool": [\
     ],\
@@ -232,6 +232,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@hoyon/gh-pkg-test", [\
+        ["workspace:.", {\
+          "packageLocation": "./",\
+          "packageDependencies": [\
+            ["@hoyon/gh-pkg-test", "workspace:."],\
+            ["esbuild", "npm:0.16.3"],\
+            ["is-even", "npm:1.0.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
       ["esbuild", [\
         ["npm:0.16.3", {\
           "packageLocation": "./.yarn/unplugged/esbuild-npm-0.16.3-4dec320b34/node_modules/esbuild/",\
@@ -261,17 +272,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@esbuild/win32-x64", "npm:0.16.3"]\
           ],\
           "linkType": "HARD"\
-        }]\
-      ]],\
-      ["gh-pkg-test", [\
-        ["workspace:.", {\
-          "packageLocation": "./",\
-          "packageDependencies": [\
-            ["gh-pkg-test", "workspace:."],\
-            ["esbuild", "npm:0.16.3"],\
-            ["is-even", "npm:1.0.0"]\
-          ],\
-          "linkType": "SOFT"\
         }]\
       ]],\
       ["is-buffer", [\

@@ -1,5 +1,7 @@
 {
-  "name": "gh-pkg-test",
+  "name": "@hoyon/gh-pkg-test",
+  "version": "0.1",
+  "repository": "https://github.com/hoyon/gh-pkg-test.git",
   "packageManager": "yarn@3.3.0",
   "dependencies": {
     "is-even": "^1.0.0"
@@ -12,6 +14,7 @@
     "build": "esbuild --bundle src/index.js --outdir=dist --minify --sourcemap"
   },
   "publishConfig": {
-    "main": "dist/index.js"
+    "main": "dist/index.js",
+    "registry": "https://npm.pkg.github.com"
   }
 }
