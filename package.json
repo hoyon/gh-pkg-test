@@ -1,4 +1,13 @@
 {
   "name": "gh-pkg-test",
-  "packageManager": "yarn@3.3.0"
+  "packageManager": "yarn@3.3.0",
+  "dependencies": {
+    "is-even": "^1.0.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.16.3"
+  },
+  "scripts": {
+    "build": "esbuild --bundle src/index.js --outdir=dist --minify --sourcemap"
+  }
 }
